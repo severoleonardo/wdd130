@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/joinus.css">
+  <title>User Registration</title>
+</head>
+<body>
+    <div id="content">  
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo17_200.png"  alt="Dry Oar"> 
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="joinus.html">Join Us</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/hero.png" alt="People enjoying rafting">
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-title">Have an Adventure</h1>
+                <h4>Make Memories with Dry Oar</h4>
+                <div class="button-box">
+                    <a class="book" href="contactus.html">Book Now</a>
+                </div>
+            </section>
+        </div>
+  <h1>User Registration</h1>
+  
+  <form action="register.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
