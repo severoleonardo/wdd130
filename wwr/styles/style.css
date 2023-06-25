@@ -79,12 +79,92 @@ background {
 }
 
 body {
+    height: 100%;
     background-color: #fcfbfb;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    background-image: url(https://byui-wdd.github.io/wdd130/resources/images/rafting11_1024.jpg);
+    min-height: 380px;
+    min-height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+a {
+    color: dodgerblue;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+  }
+  
+  .checkbox-label input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+
+.signin {
+   text-align: center; 
+   font-size: medium;
+   margin-top: 40px;
+}
+
+[type="create-account"] {
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 20px;
+    max-width: 500px;
+    padding: 30px;
+    background-color: white;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=repeat-password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border:color-mix(in hsl shorter hue, color percentage, color percentage);
+    background-color: #f6f6f6;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=repeat-password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.btn {
+    font-size: large;
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+
+.btn:hover {
+    opacity: 1;
 }
 
 h2 {

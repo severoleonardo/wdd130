@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/joinus.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>User Registration</title>
 </head>
 <body>
@@ -19,31 +19,48 @@
                 <a href="contactus.html">Contact Us</a>
             </nav>
         </header>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img" src="images/hero.png" alt="People enjoying rafting">
-            </div>
-            <section id="hero-msg">
-                <h1 class="home-title">Have an Adventure</h1>
-                <h4>Make Memories with Dry Oar</h4>
-                <div class="button-box">
-                    <a class="book" href="contactus.html">Book Now</a>
-                </div>
-            </section>
-        </div>
-  <h1>User Registration</h1>
-  
-  <form action="register.php" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    
-    <input type="submit" value="Register">
-  </form>
+    <div class="bg-img">    
+        <form action="register.php" method="POST" class="container">
+            <h1 type="create-account">Create Account</h1>
+
+            <label for="name"></label>
+            <input type="text" placeholder="Your full name" id="name" name="name" required>
+            
+            <label for="email"></label>
+            <input type="email" placeholder="Your Email" id="email" name="email" required>
+            
+            <label for="password"></label>
+            <input type="password" placeholder="Create your password" id="password" name="password" required>
+
+            <label for="password"></label>
+            <input type="password" placeholder="Repeat your password" id="password" name="password" required>
+
+            <label class="checkbox-label">
+                <input type="checkbox" unchecked="unchecked" name="agree">
+                <p class="terms">I agree all statements in <a href="#">Terms of Service</a></p>
+            </label>              
+
+            <button type="submit" class="btn" value="Register">SIGN UP</button> 
+           
+            <p class="signin">Have already an account? <a href="#">Login here</a></p>
+            
+        </form>
+    </div>    
+  <footer>
+    <p>Dry Oar &copy; 2023 - Leonardo Severo</p>
+    <p><a href="site-plan-rafting.html">Site Plan</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
 </body>
 </html>
